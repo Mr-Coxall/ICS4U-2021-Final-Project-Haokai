@@ -1,0 +1,34 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable id="Hha)M=BFAy}I#Bc3o2eD">mySprite</variable><variable type="KIND_SpriteKind" id="[Zw$-8G7}YW|r1VIF[Bd">Player</variable><variable type="KIND_SpriteKind" id="mk|IG]IJ^b+ZRlndeT7V">Projectile</variable><variable type="KIND_SpriteKind" id="J+%lSZH%wlKJ5ikQ@:#0">Food</variable><variable type="KIND_SpriteKind" id="Q*JkYzD%RHRxe,XB9IS;">Enemy</variable></variables><block type="pxt-on-start" id="2;DWctwlN7P(GDtrs#2w" x="0" y="0"><statement name="HANDLER"><block type="variables_set" id="Q(p}-`!Udei(AwzP#Am~"><field name="VAR" id="Hha)M=BFAy}I#Bc3o2eD">mySprite</field><value name="VALUE"><shadow xmlns="http://www.w3.org/1999/xhtml" type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate" id="W7^|@zH^L~8yMN?OQfW:"><value name="img"><shadow type="screen_image_picker" id="swWI/#-r4{I$$*UG-d]+"><field name="img">img`
+...........ccccc66666...........
+........ccc4444444444666........
+......cc444444444bb4444466......
+.....cb4444bb4444b5b444444b.....
+....eb4444b5b44444b44444444b....
+...ebb44444b4444444444b444446...
+..eb6bb444444444bb444b5b444446..
+..e6bb5b44444444b5b444b44bb44e..
+.e66b4b4444444444b4444444b5b44e.
+.e6bb444444444444444444444bb44e.
+eb66b44444bb444444444444444444be
+eb66bb444b5b44444444bb44444444be
+fb666b444bb444444444b5b4444444bf
+fcb666b44444444444444bb444444bcf
+.fbb6666b44444444444444444444bf.
+.efbb66666bb4444444444444444bfe.
+.86fcbb66666bbb44444444444bcc688
+8772effcbbbbbbbbbbbbbbbbcfc22778
+87722222cccccccccccccccc22226678
+f866622222222222222222222276686f
+fef866677766667777776667777fffef
+fbff877768f86777777666776fffffbf
+fbeffeefffeff7766688effeeeefeb6f
+f6bfffeffeeeeeeeeeeeeefeeeeebb6e
+f66ddfffffeeeffeffeeeeeffeedb46e
+.c66ddd4effffffeeeeeffff4ddb46e.
+.fc6b4dddddddddddddddddddb444ee.
+..ff6bb444444444444444444444ee..
+....ffbbbb4444444444444444ee....
+......ffebbbbbb44444444eee......
+.........fffffffcccccee.........
+................................
+`</field><data>{"commentRefs":[],"fieldData":{"img":"swWI/#-r4{I$$*UG-d]+"}}</data></shadow></value><value name="kind"><shadow type="spritekind" id="6c*{l~[mgUr.UTx3guJ|"><field name="MEMBER">Player</field></shadow></value></block></value><next><block type="game_control_sprite" id="vKY+ZZPjw_C[{lkc|D4t"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="false"></mutation><value name="sprite"><block type="variables_get" id="ZTlHl,q1?8IHcw^3R#=D"><field name="VAR" id="Hha)M=BFAy}I#Bc3o2eD">mySprite</field></block></value></block></next></block></statement></block></xml>
