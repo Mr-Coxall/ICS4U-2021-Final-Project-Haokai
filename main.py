@@ -1,0 +1,1 @@
+game.show_long_text("Hello, World!", DialogLayout.CENTER)
