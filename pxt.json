@@ -2,7 +2,8 @@
     "name": "ICS4U 2021 Final Project Haokai",
     "description": "",
     "dependencies": {
-        "device": "*"
+        "device": "*",
+        "animation": "*"
     },
     "files": [
         "main.blocks",
