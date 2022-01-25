@@ -44,13 +44,19 @@ function leftEnemy () {
 }
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite, otherSprite) {
     otherSprite.setPosition(-100, -100)
-    info.changeScoreBy(-10)
+    if (info.score() >= 10) {
+        info.changeScoreBy(-10)
+    } else {
+        info.setScore(0)
+    }
     if (info.life() > 0) {
         info.changeLifeBy(-1)
     }
 })
 let star: Sprite = null
+let animR: Image[] = []
 let enemiesR: Sprite = null
+let animL: Image[] = []
 let enemiesL: Sprite = null
 let left: Sprite[] = []
 let right: Sprite[] = []
@@ -64,12 +70,60 @@ right = sprites.allOfKind(SpriteKind.Enemy)
 left = sprites.allOfKind(SpriteKind.Enemy)
 let stars = sprites.allOfKind(SpriteKind.Food)
 for (let index = 0; index <= 3; index++) {
-    enemiesL = sprites.create(assets.image`4`, SpriteKind.Enemy)
+    enemiesL = sprites.create(img`
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        `, SpriteKind.Enemy)
+    animL = [assets.image`4`, assets.image`9`]
+    animation.runImageAnimation(
+    enemiesL,
+    animL,
+    randint(400, 500),
+    true
+    )
     enemiesL.setPosition(-100, -100)
     left.push(enemiesL)
 }
 for (let index = 0; index <= 3; index++) {
-    enemiesR = sprites.create(assets.image`5`, SpriteKind.Enemy)
+    enemiesR = sprites.create(img`
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        `, SpriteKind.Enemy)
+    animR = [assets.image`5`, assets.image`8`]
+    animation.runImageAnimation(
+    enemiesR,
+    animR,
+    randint(400, 500),
+    true
+    )
     enemiesR.setPosition(-100, -100)
     right.push(enemiesR)
 }

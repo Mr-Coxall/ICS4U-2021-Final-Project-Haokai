@@ -145,44 +145,6 @@ bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
 . . . . . . . . . . . . . . . . 
 . . . . . . . . . . . . . . . . 
 `;
-            case "-ciR11c:]k@W~hZ29+T:":
-            case "5":return img`
-. . . . . . . . . . . . . . . . 
-. . . . e f . . . . . . . . . . 
-. . . . c e f f f . . . . . . . 
-. . . . . c e f f f f f f . . . 
-. . . . . . c e f f f f f f . . 
-. . . . a a c e f 2 2 f f f f . 
-. . . . a a c e f 2 2 f f f f . 
-. . . . . . c e f f f f f f . . 
-. . . . . c e f f f f f f . . . 
-. . . . c e f f f . . . . . . . 
-. . . . e f . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-`;
-            case "]":
-            case "4":return img`
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . f e . . . . 
-. . . . . . . f f f e c . . . . 
-. . . f f f f f f e c . . . . . 
-. . f f f f f f e c . . . . . . 
-. f f f f 2 2 f e c a a . . . . 
-. f f f f 2 2 f e c a a . . . . 
-. . f f f f f f e c . . . . . . 
-. . . f f f f f f e c . . . . . 
-. . . . . . . f f f e c . . . . 
-. . . . . . . . . . f e . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-`;
             case "IA,cz=pih{;ZPy$4k5Lw":
             case "3":return img`
 . . . . . . . . . . . . . . . . 
@@ -259,6 +221,25 @@ bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
 . . . . . . . . . . . . . . . . 
 . . . . . . . . . . . . . . . . 
 `;
+            case "]":
+            case "4":return img`
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . f e . . . . 
+. . . . . . . f f f e c . . . . 
+. . . f f f f f f e c . . . . . 
+. . f f f f f f e c . . . . . . 
+. f f f f 2 2 f e c a a . . . . 
+. f f f f 2 2 f e c a a . . . . 
+. . f f f f f f e c . . . . . . 
+. . . f f f f f f e c . . . . . 
+. . . . . . . f f f e c . . . . 
+. . . . . . . . . . f e . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+`;
             case "N#oyg-;5q;cqOSOH2,_{":
             case "9":return img`
 . . . . . . . . . . . . . . . . 
@@ -272,6 +253,25 @@ bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
 . . . f f f f f f f f f . . . . 
 . . . . . . . . . . . . . . . . 
 . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+`;
+            case "-ciR11c:]k@W~hZ29+T:":
+            case "5":return img`
+. . . . . . . . . . . . . . . . 
+. . . . e f . . . . . . . . . . 
+. . . . c e f f f . . . . . . . 
+. . . . . c e f f f f f f . . . 
+. . . . . . c e f f f f f f . . 
+. . . . a a c e f 2 2 f f f f . 
+. . . . a a c e f 2 2 f f f f . 
+. . . . . . c e f f f f f f . . 
+. . . . . c e f f f f f f . . . 
+. . . . c e f f f . . . . . . . 
+. . . . e f . . . . . . . . . . 
 . . . . . . . . . . . . . . . . 
 . . . . . . . . . . . . . . . . 
 . . . . . . . . . . . . . . . . 
