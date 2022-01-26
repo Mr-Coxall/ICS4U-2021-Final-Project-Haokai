@@ -26,6 +26,7 @@ function rightEnemy () {
 }
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Food, function (sprite, otherSprite) {
     otherSprite.setPosition(-100, -100)
+    music.baDing.play()
     info.changeScoreBy(20)
     if (info.life() < 3) {
         info.changeLifeBy(1)
@@ -44,6 +45,9 @@ function leftEnemy () {
 }
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite, otherSprite) {
     otherSprite.setPosition(-100, -100)
+    if (info.life() > 1) {
+        music.zapped.play()
+    }
     if (info.score() >= 10) {
         info.changeScoreBy(-10)
     } else {
@@ -61,9 +65,15 @@ let enemiesL: Sprite = null
 let left: Sprite[] = []
 let right: Sprite[] = []
 let _1: Sprite = null
+game.splash("Haokai")
 scene.setBackgroundImage(assets.image`background`)
 _1 = sprites.create(assets.image`1-1`, SpriteKind.Player)
 _1.setPosition(80, 82)
+game.showLongText("It is you.", DialogLayout.Top)
+game.showLongText("You have 3 life in the game.", DialogLayout.Bottom)
+game.showLongText("Get star will +20 scores, and add 1 life if your lifes is not full.", DialogLayout.Bottom)
+game.showLongText("Collision an enemy will -10 scores and -1 life.", DialogLayout.Bottom)
+game.showLongText("The score will +1 scores for each second.", DialogLayout.Bottom)
 info.setLife(3)
 info.setScore(0)
 right = sprites.allOfKind(SpriteKind.Enemy)
